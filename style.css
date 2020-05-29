@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 22px;
+    background-image: linear-gradient(100deg, #f6d365, #fda0a5);
+    color: #fff;
+    min-height: 100vh;
+    transition: all .3s ease;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    border: none;
+    padding: .2rem;
+    font-size: 2rem;
+    background-color: #fff;
+}
+
+form button {
+    color: #d88771;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+form button:hover {
+    background-color: #d88771;
+    color: #fff;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+    transition: all .3s ease;
+}
+
+.todo {
+    margin: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.check-btn, .delete-btn {
+    background-color: #ff6f47;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.check-btn {
+    background-color: rgb(72, 204, 73);
+}
+
+.fas {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: .5rem;
+}
+
+.select {
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+select {
+    color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.select::after {
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    background-color: #ff6f47;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background-color: #fff;
+    color: #ff6f47;
+}
